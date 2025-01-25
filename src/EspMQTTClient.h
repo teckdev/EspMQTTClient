@@ -6,7 +6,6 @@
 #include <vector>
 
 #ifdef ESP8266
-
   #include <ESP8266WiFi.h>
   #include <ESP8266WebServer.h>
   #include <ESP8266mDNS.h>
@@ -18,7 +17,7 @@
   #define WebServer ESP8266WebServer
 
 #else // for ESP32
-
+  #include <WiFi.h>
   #include <WiFiClient.h>
   #include <WebServer.h>
   #include <ESPmDNS.h>
